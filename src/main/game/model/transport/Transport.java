@@ -1,7 +1,9 @@
 package game.model.transport;
 
-public abstract class Transport {
+import game.model.resources.ResourceManager;
 
+public abstract class Transport {
+    private ResourceManager resourceManager;
 //    private PlayerId playerId;
 //    private int transportId;
 //    private int moveCapacity;

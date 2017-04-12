@@ -1,6 +1,7 @@
 package mapMaker.model.tile;
 
 
+import game.model.resources.ResourceManager;
 import mapMaker.direction.mmAngle;
 import mapMaker.direction.mmTileCompartmentDirection;
 import mapMaker.direction.mmTileEdgeDirection;
@@ -15,6 +16,7 @@ public class mmTile implements Cloneable{
     private Map<mmTileCompartmentDirection, mmTileCompartment> compartments;
     private mmTerrain mmTerrain;
     private mmRiverConfiguration mmRiverConfiguration;
+    private ResourceManager mmResourceManager;
 
     public mmTile(mmTerrain mmTerrain, mmRiverConfiguration mmRiverConfiguration) {
         edges = new HashMap<mmTileEdgeDirection, mmTileEdge>();
